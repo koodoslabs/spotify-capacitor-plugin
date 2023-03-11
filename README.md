@@ -42,7 +42,7 @@ Add these keys to Info.plist:
    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
 
         ...
-        spotifyCapPluginPlugin.shared?.handleOpenUrl(url: url)
+        spotifyCapPluginPlugin.shared?.handleOpenUrl(url: url, application: app, options: options)
         ...
 
    }
@@ -61,6 +61,7 @@ Add these keys to Info.plist:
 * [`isInstalled()`](#isinstalled)
 * [`userAuth(...)`](#userauth)
 * [Interfaces](#interfaces)
+* [Enums](#enums)
 
 </docgen-index>
 
@@ -98,11 +99,11 @@ userAuth(options: { value: AuthParams; }) => Promise<SpotifyAuthSchema>
 
 #### SpotifyAuthSchema
 
-| Prop               | Type                |
-| ------------------ | ------------------- |
-| **`accessToken`**  | <code>string</code> |
-| **`refreshToken`** | <code>string</code> |
-| **`scope`**        | <code>string</code> |
+| Prop               | Type                  |
+| ------------------ | --------------------- |
+| **`accessToken`**  | <code>string</code>   |
+| **`refreshToken`** | <code>string</code>   |
+| **`scope`**        | <code>Scopes[]</code> |
 
 
 #### AuthParams
@@ -113,5 +114,33 @@ userAuth(options: { value: AuthParams; }) => Promise<SpotifyAuthSchema>
 | **`spotifyRedirectURL`** | <code>string</code> |
 | **`tokenSwapURL`**       | <code>string</code> |
 | **`tokenRefreshURL`**    | <code>string</code> |
+
+
+### Enums
+
+
+#### Scopes
+
+| Members                         |
+| ------------------------------- |
+| **`playlistReadPrivate`**       |
+| **`playlistReadCollaborative`** |
+| **`playlistModifyPublic`**      |
+| **`playlistModifyPrivate`**     |
+| **`userFollowRead`**            |
+| **`userFollowModify`**          |
+| **`userLibraryRead`**           |
+| **`userLibraryModify`**         |
+| **`userReadBirthDate`**         |
+| **`userReadEmail`**             |
+| **`userReadPrivate`**           |
+| **`userTopRead`**               |
+| **`ugcImageUpload`**            |
+| **`streaming`**                 |
+| **`appRemoteControl`**          |
+| **`userReadPlaybackState`**     |
+| **`userModifyPlaybackState`**   |
+| **`userReadCurrentlyPlaying`**  |
+| **`userReadRecentlyPlayed`**    |
 
 </docgen-api>

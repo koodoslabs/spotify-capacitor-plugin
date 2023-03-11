@@ -14,7 +14,7 @@ export class spotifyCapPluginWeb extends WebPlugin implements spotifyCapPluginPl
     return {
       accessToken: "",
       refreshToken: "",
-      scope: ""
+      scope: []
     };
   }
 }

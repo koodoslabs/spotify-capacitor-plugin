@@ -1,10 +1,3 @@
-//
-//  Globals.swift
-//  SpotifyCapacitorPlugin
-//
-//  Created by Laszlo Blum on 2023. 03. 10..
-//
-
 import Foundation
 
 @objc class InitParams: NSObject, Codable {

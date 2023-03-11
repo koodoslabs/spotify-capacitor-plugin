@@ -2,10 +2,6 @@ import Foundation
 import Capacitor
 import MobileCoreServices
 
-/**
- * Please read the Capacitor iOS Plugin Development Guide
- * here: https://capacitorjs.com/docs/plugins/ios
- */
 @objc(spotifyCapPluginPlugin)
 public class spotifyCapPluginPlugin: CAPPlugin {
     public static var shared: spotifyCapPluginPlugin?
@@ -16,9 +12,9 @@ public class spotifyCapPluginPlugin: CAPPlugin {
         spotifyCapPluginPlugin.shared = self
     }
     
-    public func handleOpenUrl(url: URL) {
+    public func handleOpenUrl(url: URL, application: UIApplication, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) {
         NSLog("Processing URL \(url) in plugin...")
-        implementation.setAccessToken(from: url)
+        implementation.setAccessToken(from: url, application: application, options: options)
     }
 
     @objc func isInstalled(_ call: CAPPluginCall) {
