@@ -1,0 +1,216 @@
+{
+  "api": {
+    "name": "spotifyCapPluginPlugin",
+    "slug": "spotifycappluginplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "isInstalled",
+        "signature": "() => Promise<boolean>",
+        "parameters": [],
+        "returns": "Promise<boolean>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "isinstalled"
+      },
+      {
+        "name": "userAuth",
+        "signature": "(options: { value: AuthParams; }) => Promise<SpotifyAuthSchema>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: AuthParams; }"
+          }
+        ],
+        "returns": "Promise<SpotifyAuthSchema>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "SpotifyAuthSchema",
+          "AuthParams"
+        ],
+        "slug": "userauth"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "SpotifyAuthSchema",
+      "slug": "spotifyauthschema",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "accessToken",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "refreshToken",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "scope",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "Scopes"
+          ],
+          "type": "Scopes[]"
+        }
+      ]
+    },
+    {
+      "name": "AuthParams",
+      "slug": "authparams",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "spotifyClientID",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "spotifyRedirectURL",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "tokenSwapURL",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "tokenRefreshURL",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "name": "Scopes",
+      "slug": "scopes",
+      "members": [
+        {
+          "name": "playlistReadPrivate",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "playlistReadCollaborative",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "playlistModifyPublic",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "playlistModifyPrivate",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "userFollowRead",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "userFollowModify",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "userLibraryRead",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "userLibraryModify",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "userReadBirthDate",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "userReadEmail",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "userReadPrivate",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "userTopRead",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "ugcImageUpload",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "streaming",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "appRemoteControl",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "userReadPlaybackState",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "userModifyPlaybackState",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "userReadCurrentlyPlaying",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "userReadRecentlyPlayed",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    }
+  ],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
