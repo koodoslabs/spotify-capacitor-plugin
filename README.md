@@ -7,7 +7,7 @@ Capacitor plugin to handle authentication for Spotify.
 ## Install
 Not on npm yet. Install from git repo:
 ```bash
-npm install npm install git+https://github.com/koodoslabs/spotify-capacitor-plugin.git
+npm install git+https://github.com/koodoslabs/spotify-capacitor-plugin.git
 npx cap sync
 ```
 
