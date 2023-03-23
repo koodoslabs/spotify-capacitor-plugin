@@ -35,12 +35,12 @@ Add these keys to Info.plist:
   </dict>
 </array>
 ```
-3. Add the SpotifyiOS framework 'Package Dependency' to the project App and Pods. **For Pods, make sure to select `SpotifyCapPlugin`.**
+3. Add the SpotifyiOS framework 'Package Dependency' to the project App and Pods. For Pods, make sure to select `SpotifyCapPlugin`
    '''
    URL: https://github.com/spotify/ios-sdk
    Exact version: 1.2.3
    '''
-   ![Screenshot 2023-03-20 at 23.15.38.png](..%2F..%2F..%2FDownloads%2FScreenshot%202023-03-20%20at%2023.15.38.png)
+   ![Screenshot.png](https://user-images.githubusercontent.com/44687983/227304965-30dea88c-a43a-4ec7-9780-261561a448cc.png)
 4. `npx cap sync` to sync the changes.
 5. Insert the below line to AppDelegate.swift's delegate:
    ```
