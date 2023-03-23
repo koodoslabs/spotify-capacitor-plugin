@@ -2,6 +2,8 @@
 
 Capacitor plugin to handle authentication for Spotify.
 
+!!! WARNING: scopes are currently hardcoded !!!
+
 ## Install
 Not on npm yet. Install from git repo:
 ```bash
