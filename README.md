@@ -17,9 +17,9 @@ Add these keys to Info.plist:
 1. LSApplicationQueriesSchemes
 ```
 <key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>spotify</string>
-	</array>
+<array>
+	<string>spotify</string>
+</array>
 ```
 2. Make change in CFBundleURLTypes according to your app needs. In our case:
 ```
@@ -57,7 +57,7 @@ Add these keys to Info.plist:
 
 ## Sample Usage
 ```javascript
-import {spotifyCapPlugin} from "spotify-capacitor-plugin";
+import { spotifyCapPlugin } from "spotify-capacitor-plugin";
 
 let isInstalled = await spotifyCapPlugin.isInstalled()
 console.log('IsInstalled: ' + JSON.stringify(isInstalled))
@@ -70,7 +70,6 @@ spotifyCapPlugin.userAuth({value: {
    }}).then((response)=>{
      console.log('Spotify Auth Response: ' + JSON.stringify(response))
    }).catch((err) => {
-      // can be ignored
       console.info('Spotify Auth Error: ' + JSON.stringify(err))
    })
 ```
