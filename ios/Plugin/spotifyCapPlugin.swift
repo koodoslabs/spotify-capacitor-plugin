@@ -82,10 +82,10 @@ import Capacitor
             .ugcImageUpload,
             .userReadRecentlyPlayed,
             .userTopRead,
-//            .playlistModifyPrivate, //invalid scope
-//            .playlistReadCollaborative, //invalid scope
-//            .userLibraryRead, //invalid scope
-//            .userReadEmail, //invalid scope
+            .playlistReadPrivate,
+            .playlistReadCollaborative,
+            .userLibraryRead,
+            .userReadEmail
         ]
         
         let stpDel = self
