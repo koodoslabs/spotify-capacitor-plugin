@@ -3,9 +3,9 @@
 Capacitor plugin to handle authentication for Spotify.
 
 ## Install
-
+Not on npm yet. Install from git repo:
 ```bash
-npm install spotify-capacitor-plugin
+npm install npm install git+https://github.com/koodoslabs/spotify-capacitor-plugin.git
 npx cap sync
 ```
 
@@ -33,27 +33,23 @@ Add these keys to Info.plist:
   </dict>
 </array>
 ```
-
 3. Add the SpotifyiOS framework 'Package Dependency' to the project App and Pods. **For Pods, make sure to select `SpotifyCapPlugin`.**
    '''
    URL: https://github.com/spotify/ios-sdk
    Exact version: 1.2.3
    '''
+   ![Screenshot 2023-03-20 at 23.15.38.png](..%2F..%2F..%2FDownloads%2FScreenshot%202023-03-20%20at%2023.15.38.png)
 4. `npx cap sync` to sync the changes.
 5. Insert the below line to AppDelegate.swift's delegate:
-
    ```
    import SpotifyCapacitorPlugin
    ...
 
    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-
         ...
         spotifyCapPluginPlugin.shared?.handleOpenUrl(url: url, application: app, options: options)
         ...
-
    }
-    
    ```
 6. Build the app as usual.
 
