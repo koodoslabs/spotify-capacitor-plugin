@@ -166,4 +166,5 @@ userAuth(options: { value: AuthParams; }) => Promise<SpotifyAuthSchema>
 
 ## Resources
 [Spotify Auth Doc ](https://github.com/spotify/ios-sdk/blob/master/docs/auth.md)
+	
 [Endpoint Spec](https://developer.spotify.com/documentation/ios/guides/token-swap-and-refresh/)
