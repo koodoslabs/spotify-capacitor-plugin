@@ -5,4 +5,4 @@
 //  Created by Laszlo Blum on 2023. 03. 06..
 //
 
-#import <SpotifyiOS/SpotifyiOS.h>
+#import <SpotifyiOS/SpotifyiOs.h>

@@ -9,6 +9,7 @@ end
 
 target 'Plugin' do
   capacitor_pods
+  pod 'SpotifyiOS', :path => '/Users/laszloblum/works/upwork/Koodos/ios-sdk'
 end
 
 target 'PluginTests' do
