@@ -9,6 +9,7 @@
   "files": [
     "dist/",
     "ios/Plugin/",
+    "SpotifyiOS.xcframework",
     "SpotifyCapacitorPlugin.podspec"
   ],
   "author": "KoodosLab",
