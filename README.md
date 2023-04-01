@@ -48,11 +48,16 @@ Add these keys to Info.plist:
    }
     
    ```
-4. Add the SpotifyiOS framework 'Package Dependency' to the project App and Pods:
+4. Add the SpotifyiOS capacitor plugin:
    '''
-   URL: https://github.com/spotify/ios-sdk
-   Exact version: 1.2.3
+   npm install https://github.com/koodoslabs/spotify-capacitor-plugin.git
    '''
+4. Update pods
+a. Go to <<project root>>/ios/App
+b. Issue
+'''
+pod update
+'''
 
 ## API
 
